@@ -670,6 +670,38 @@
       "ready": "Contract-backed settlement receipt for this claim."
     }
   },
+  "copyTrading": {
+    "title": "Copy Trading Permissions",
+    "permissionStatus": {
+      "loading": "Checking Contract",
+      "invalid": "Invalid Policy",
+      "stale": "Stale",
+      "disconnected": "Wallet Disconnected",
+      "dependency_failure": "Chain RPC Unavailable",
+      "paused": "Execution Paused",
+      "revoked": "Revoked",
+      "expired": "Expired",
+      "ready": "Contract Backed"
+    },
+    "permissionStatusHint": {
+      "loading": "Querying on-chain allowance and policy bounds.",
+      "invalid": "Permission bounds or addresses violate contract constraints.",
+      "stale": "Policy state may be out of date. Re-querying on-chain allowance.",
+      "disconnected": "Connect owner wallet to manage or verify execution permissions.",
+      "dependency_failure": "Unable to verify Soroban SAC allowance. Retrying when RPC recovers.",
+      "paused": "Copy trading execution is currently paused by platform policy.",
+      "revoked": "This execution permission has been revoked by the owner.",
+      "expired": "This execution permission has passed its expiration timestamp.",
+      "ready": "Active execution permission backed by on-chain USDC allowance."
+    },
+    "allowance": "On-chain Allowance",
+    "signedAllowance": "Signed Allowance",
+    "perPosition": "Max per position",
+    "dailyCap": "Daily cap",
+    "maxLoss": "Max realized loss",
+    "signalAgent": "Signal agent",
+    "executionAgent": "Execution agent"
+  },
   "dashboard": {
     "title": "MY DASHBOARD",
     "total": "{count} total",
